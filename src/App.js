@@ -1,17 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Home from './pages/home';
 import Header from './bars/header';
+import About from "./pages/about";
+
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 
 function App() {
-  const[navbar, setnavbar] = useState([]);
   return (
-    <div className="App" >
-      <div >
-        <Home></Home>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path='/' exact element={<Home />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
+    </BrowserRouter>
+    
   );
 }
 

@@ -1,17 +1,17 @@
 import React from 'react'
 import './header.css'
+import {Link} from "react-router-dom";
 
-function Header() {
+const Header=() =>{
   return (
     <header className='header'>
-        <div className='mid'>
         <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href='#'>  Paintings</a> </li>
+                <li><a href='/' activeStyle={{color: "yellow"}}>Home</a></li>
+                <li><a href='/about'>About</a></li>
+                <li><Link to='/paintings'>Paintings</Link></li>
         </ul>
         
-        </div>
+        
   </header>
   )
 }

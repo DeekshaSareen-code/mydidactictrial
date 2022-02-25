@@ -1,7 +1,7 @@
 import React from 'react'
 import "./home.css"
 
-function Home() {
+const Home=()=> {
   return (
     <div className='bgimage'>
 
@@ -14,7 +14,7 @@ function Home() {
          
     </div>
    
-  )
+  );
 }
 
-export default Home
+export default Home;

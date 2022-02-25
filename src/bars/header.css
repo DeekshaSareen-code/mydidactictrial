@@ -1,19 +1,14 @@
-.header {
-    text-align: center;
-    left:0;
-    right:0;
-    opacity: 0.5;
-    position:fixed;
-    
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+ul {
     overflow: hidden;
     background-color: #333;
+    list-style: none;
   }
   
+ .header{
+   margin-bottom: -1rem;
+   position: relative;
+   box-shadow:  2px 2px;
+ }
   li {
     float: left;
   }
@@ -26,6 +21,8 @@
     text-decoration: none;
   }
   
-  a:hover {
+  li a:hover {
     background-color: #111;
+    color: yellow;
+    text-shadow:#111;
   }
