@@ -1,0 +1,31 @@
+.bgimage{
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.main{
+    animation: color-change 4s infinite;
+    position: relative;
+    color: white;
+    padding-top: 20rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 2cm;
+
+}
+p{
+    position: relative;
+    justify-content: center;
+    color: white;
+    
+}
+em{
+    color: yellow;
+}
+@keyframes color-change {
+    0% { color: wheat; }
+    50% { color: white; }
+    100% { color: burlywood; }
+  }
