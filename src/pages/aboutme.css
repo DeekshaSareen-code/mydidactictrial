@@ -1,0 +1,12 @@
+div{
+    flex-direction: row;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap:wrap;
+}

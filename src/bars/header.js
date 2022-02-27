@@ -1,6 +1,5 @@
 import React from 'react'
 import './header.css'
-import {Link} from "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar';
 import { Nav,NavDropdown,Container} from 'react-bootstrap'
 const Header=() =>{
@@ -9,7 +8,7 @@ const Header=() =>{
         <Container>
         <Navbar.Brand href="/"> <img
           alt=""
-          src="helo.svg"
+          src= {require("../images/Deeksha2.jpeg")}
           width="30"
           height="30"
           className="d-inline-block align-top"
@@ -19,8 +18,8 @@ const Header=() =>{
           <Nav className="me-auto">
             <Nav.Link href="/paintings">Paintings</Nav.Link>
             <NavDropdown title="About" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/about">About Me!</NavDropdown.Item>
-              <NavDropdown.Item href="/about">Contact</NavDropdown.Item>
+              <NavDropdown.Item href="/about/aboutme">About Me!</NavDropdown.Item>
+              <NavDropdown.Item href="/about/contact">Contact</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Tech Stack</NavDropdown.Item>
             </NavDropdown>
           </Nav>
