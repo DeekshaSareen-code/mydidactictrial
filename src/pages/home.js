@@ -9,9 +9,7 @@ const Home=()=> {
         <p className='main'>Developer <em>.</em> Artist </p>
         <p ><i>Personal Website of Deeksha Sareen</i></p>
       </div>
-         
-        
-         
+   
     </div>
    
   );

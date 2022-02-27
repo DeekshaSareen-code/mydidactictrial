@@ -1,18 +1,32 @@
 import React from 'react'
 import './header.css'
 import {Link} from "react-router-dom";
-
+import Navbar from 'react-bootstrap/Navbar';
+import { Nav,NavDropdown,Container} from 'react-bootstrap'
 const Header=() =>{
   return (
-    <header className='header'>
-        <ul>
-                <li><a href='/' activeStyle={{color: "yellow"}}>Home</a></li>
-                <li><Link to='/about'>About</Link></li>
-                <li><Link to='/paintings'>Paintings</Link></li>
-        </ul>
-        
-        
-  </header>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top" >
+        <Container>
+        <Navbar.Brand href="/"> <img
+          alt=""
+          src="helo.svg"
+          width="30"
+          height="30"
+          className="d-inline-block align-top"
+        />{' '}Home</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/paintings">Paintings</Nav.Link>
+            <NavDropdown title="About" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="/about">Contact</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Tech Stack</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+        </Container>
+     
+</Navbar>
   )
 }
 

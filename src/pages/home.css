@@ -1,7 +1,8 @@
 .bgimage{
-    background-image: url('../images/background.jpg');
+    background-image: url('../Paintings/4.jpeg');
     background-size: cover;
     height: 100vh;
+    opacity: 0.9;
 }
 
 .main{
@@ -25,7 +26,7 @@ em{
     color: yellow;
 }
 @keyframes color-change {
-    0% { color: wheat; }
-    50% { color: white; }
+    0% { color: darkred; }
+    50% { color: brown; }
     100% { color: burlywood; }
   }
