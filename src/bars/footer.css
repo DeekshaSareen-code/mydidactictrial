@@ -1,6 +1,6 @@
 .footer {
     text-align: center;
-    text-decoration: white;
+    
     position:fixed;
     left:0;
     bottom:0;
@@ -10,5 +10,4 @@
     padding: 5px;
     opacity: 0.5;
     display: inline;
-    text-decoration-color: aliceblue;
   }
