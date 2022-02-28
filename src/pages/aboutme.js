@@ -9,8 +9,8 @@ import { SocialIcon } from 'react-social-icons';
 
 
 function Aboutme() {
-  const handleClick = () => {
-    window.open("https://www.linkedin.com/in/deeksha-sareen-00a47b199/");
+  const handleClick = value=>() => {
+    window.open(value);
   };
   return (
     
@@ -22,15 +22,6 @@ function Aboutme() {
           <Col md={9} lg={5} style={{display:'flex'}}>
           <Card.Img className="img-card"  src={require("../images/deeksha.jpg")} />
           </Col>
-          {/* <Col>
-          <Card.Body>
-            <Card.Title style={{textAlign: "left"}} >Hello!!</Card.Title>
-            <Card.Text style={{color:'black' , textAlign: "left"}}>
-              My name is Deeksha, and I am a software developer. <br/>
-              I currently stay in a small town called Halifax in Canada and my birthplace is India. This is my attempt in creating my e-portfolio. I will keep developing it as I learn more. Meanwhile, you can checkout my paintings.
-            </Card.Text>
-          </Card.Body>
-          </Col> */}
           </Row>
         
           <div class="user-info">
@@ -51,11 +42,11 @@ function Aboutme() {
         <br/>
         <br/>
           <p style={{color:'black', margin:'10px', textAlign:'center', fontWeight:200}}> My Social Handles</p>
-              <SocialIcon url="https://www.linkedin.com/in/deeksha-sareen-00a47b199/" onClick={handleClick}/> &nbsp;
+              <SocialIcon network='linkedin' onClick={handleClick('https://www.linkedin.com/in/deeksha-sareen-00a47b199/')}/> &nbsp;
 
-              <SocialIcon url="mailto:deekshasareen97@gmail.com" />&nbsp; 
+              <SocialIcon network='google'  onClick={handleClick('mailto:deekshasareen97@gmail.com')}/>&nbsp; 
 
-              <SocialIcon url="https://github.com/DeekshaSareen-code" />&nbsp;
+              <SocialIcon network='github'  onClick={handleClick('https://github.com/DeekshaSareen-code')}/>&nbsp;
       </div>
   
        
