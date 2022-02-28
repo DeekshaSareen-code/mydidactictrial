@@ -3,8 +3,8 @@ import { render } from "react-dom";
 import "./footer.css";
 
 const Footer = () => (
-  <footer className="footer" style={{textDecoration: 'white'}}>
-    <p>© 2022 Deeksha Sareen, Canada, Halifax</p>
+  <footer className="footer" >
+    <p style={{color: 'wheat'}}>© 2022 Deeksha Sareen, Canada, Halifax</p>
   </footer>
 );
 

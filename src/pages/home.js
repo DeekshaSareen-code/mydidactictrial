@@ -7,7 +7,7 @@ const Home=()=> {
 
       <div className='innercontent'>
         <p className='main'>Developer <em>.</em> Artist </p>
-        <p ><i>Personal Website of Deeksha Sareen</i></p>
+        <p style={{color:'white'}}><i>Personal Website of Deeksha Sareen</i></p>
       </div>
    
     </div>
