@@ -2,9 +2,7 @@ import React from 'react'
 
 import Card from "react-bootstrap/Card";
 import "./aboutme.css"
-import { Col, Row, Button} from "react-bootstrap";
-
-import ReactDOM from 'react-dom';
+import { Col, Row} from "react-bootstrap";
 import { SocialIcon } from 'react-social-icons';
 
 
